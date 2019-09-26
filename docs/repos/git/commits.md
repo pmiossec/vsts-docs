@@ -147,7 +147,9 @@ terminal so you can enter a commit message.
 Amend your last commit to correct small errors without making a new commit.
 
 > [!WARNING]
-> Do not amend [pushed](pushing.md) commits. If you need to update pushed code, [undo the changes with revert](undo.md) or create and push another commit.
+> Avoid amending [pushed](pushing.md) commits that other developers could have retrieved and based their work on. That could be a confusing situation for developers to be in and be complicated to recover from.
+> If you need to update pushed code, prefer to [undo the changes with revert](undo.md) or create and push another commit.
+
 
 #### [Visual Studio](#tab/visual-studio/)
 1. Open the **Changes** view in Team Explorer and stage your updated changes. You can amend just the commit message by leaving the staged changes empty.
